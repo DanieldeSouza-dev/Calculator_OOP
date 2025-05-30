@@ -60,3 +60,6 @@ This is an **object-oriented calculator** project written in Python, focused on 
 
 ```bash
 python main.py
+```
+
+3. Enjoy!! 
