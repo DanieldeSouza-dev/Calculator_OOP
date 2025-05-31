@@ -17,7 +17,7 @@ class Calculadora:
 
                 if operator == 'r':
                     result = core.sqrt(dig1)
-                    print(f'The result is {result}')
+                    print(f'The result is {result:.2f}')
 
                     if input('Would you like to proceed? [y/n]').strip().lower() !='y':
                         print('Thank you for testing! See you next time.')
