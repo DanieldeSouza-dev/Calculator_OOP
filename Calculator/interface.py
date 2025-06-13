@@ -6,14 +6,14 @@ def menu():
         print('[**] Exponentiation')
         print('[%] Percentage')
         print('[R] Square Root')
-        print('-=' * 20)
+        print('\033[0:34m-=\033[0m' * 20)
 
 def claim_number(msg):
         while True:
             try:
                 return float(input(msg))
             except ValueError:
-                print('Invalid entry!')
+                print('\033[0:31mInvalid entry!\033[0m')
                 
 def claim_operator(msg):
     valid_operators = ['+', '-', '*', '/', '**', '%', 'r']
@@ -21,4 +21,4 @@ def claim_operator(msg):
          op = input(msg).strip().lower()
          if op in valid_operators:
               return op
-         print('Invalid operator! Please choose a valid one.')
+         print('\033[0:31mInvalid operator! Please choose a valid one.\033[0m')
